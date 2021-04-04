@@ -16,17 +16,27 @@
 				<a href="./" class="logo"><img src="img/logo.svg" alt="CloudBudget"></a>
 				<nav class="menu">
 					<ul class="menu__list">
-						<li class="menu__item"><a href="#" class="menu__link">Overview</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Features</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Technology</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Sign up</a></li>
+						<li class="menu__item"><a href="#overview" class="menu__link">Overview</a></li>
+						<li class="menu__item"><a href="#features" class="menu__link">Features</a></li>
+						<li class="menu__item"><a href="#technology" class="menu__link">Technology</a></li>
+						<li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+						<li class="menu__item"><a href="#signup" class="menu__link">Sign up</a></li>
 					</ul>
 				</nav>
 				<div class="user-nav">
 					<div class="user-nav__language">
 						<img class="user-nav__flag" src="img/en-icon.svg" alt="en">
-						<button class="user-nav__switch" aria-label="Switch language">En</button>
+						<button id="switch" class="user-nav__switch" aria-label="Switch language">En</button>
+						<ul class="user-nav__language-list">
+							<li class="user-nav__language-item">
+								<img class="user-nav__flag" src="img/en-icon.svg" alt="en">
+								<button class="user-nav__switch" aria-label="Switch language">En</button>
+							</li>
+							<li class="user-nav__language-item">
+								<img class="user-nav__flag" src="img/en-icon.svg" alt="en">
+								<button class="user-nav__switch" aria-label="Switch language">En</button>
+							</li>
+						</ul>
 					</div>
 					<button class="button button--transparent user-nav__button">Login</button>
 				</div>
@@ -45,7 +55,7 @@
 			</div>
 		</section>
 
-		<section class="promo">
+		<section id="overview" class="promo">
 			<div class="container">
 				<div class="promo__inner">
 					<div class="promo__content">
@@ -68,7 +78,7 @@
 			</div>
 		</section>
 
-		<section class="features">
+		<section id="features" class="features">
 			<div class="container">
 				<h2 class="title">Features</h2>
 				<ul class="features__list">
@@ -104,7 +114,7 @@
 			</div>
 		</section>
 
-		<section class="technology">
+		<section id="technology" class="technology">
 			<div class="container">
 				<h2 class="title">Technology</h2>
 				<ul class="technology__list">
@@ -175,7 +185,7 @@
 			</div>
 		</section>
 
-		<section class="contact">
+		<section id="contact" class="contact">
 			<div class="container">
 				<div class="contact__inner">
 					<div class="contact__content">
@@ -201,7 +211,7 @@
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer id="signup" class="footer">
 		<div class="container">
 			<div class="footer__content">
 				<div class="footer__column">
