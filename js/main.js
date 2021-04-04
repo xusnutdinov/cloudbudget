@@ -24,6 +24,7 @@ window.addEventListener("load", function () {
     })
 });
 
+/* Scroll to anchor */
 document.querySelectorAll('a[href^="#"').forEach(link => {
 
     link.addEventListener('click', function (e) {
@@ -42,4 +43,28 @@ document.querySelectorAll('a[href^="#"').forEach(link => {
             behavior: 'smooth'
         });
     });
+});
+
+
+/* Custom select */
+let selectCurrent = document.querySelector('.select__current');
+const selectBody = document.querySelector('.select__body');
+const selectItems = document.querySelectorAll('.select__input');
+
+selectCurrent.addEventListener('click', (event) => {
+    event.stopPropagation();
+    selectBody.classList.toggle('active');
+    selectCurrent.classList.toggle('active');
+});
+
+selectItems.forEach((item) => {
+    item.addEventListener('click', (event) => {
+        event.currentTarget.parentElement.classList.toggle('active');
+        let text = event.currentTarget.innerText;
+        selectCurrent.innerText = text;
+    });
+});
+
+document.addEventListener('click', function (event) {
+    selectCurrent.classList.remove('active');
 });
